@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    height: 100vh;
+    margin: 0;
+
+}
+
+
+.listTodo{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+     margin: 0 auto;
+ 
+}
+.show-task {
+    font-size: 1.1rem;
+    color: #555;
+}
+.react-icon-edit{
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.react-icon-edit:hover{
+    color: rgb(32, 185, 103);
+}
+
+.react-icon-delete{
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.react-icon-delete:hover{
+    color: rgba(150, 6, 6, 0.807);
+}
+.text-center {
+    color: #777;
+}

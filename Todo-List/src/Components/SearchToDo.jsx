@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../style/App.css'
 
 const SearchToDo = ({ addTask }) => {
   const [userInput, setUserInput] = useState('');
