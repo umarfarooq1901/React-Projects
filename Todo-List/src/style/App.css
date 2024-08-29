@@ -36,3 +36,8 @@ body {
 .text-center {
     color: #777;
 }
+/* Strike-through effect for completed tasks */
+.strike-through{
+    text-decoration: line-through;
+    color: #6c757d;
+}

@@ -61,11 +61,23 @@ Purpose: Since we don’t need the actual task in the filter function, we use _ 
      Task 2 (index 1) → This index is equal to 1, so it's removed.
      Task 3 (index 2) → This index is not equal to 1, so it's kept.*/
 
+
+
+    //  Edit a task 
+
+        const updateTask = (indextoUpdate, editedtask)=>{
+              const updateTask = tasks.map((task, index)=>
+                  index ===indextoUpdate ? editedtask : task
+              );
+
+              setTasks(updateTask);
+        };
+
   return (
     <div>
       <h1 className="text-center my-5">To-Do List</h1>
       <SearchToDo addTask={addTask} />
-      <ListTodo tasks={tasks} handleDelete={handleDelete} />
+      <ListTodo tasks={tasks} handleDelete={handleDelete} updateTask = {updateTask} />
     </div>
   );
 }
